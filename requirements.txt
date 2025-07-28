@@ -1,7 +1,5 @@
 streamlit
 pillow
 pandas
-json
 supabase
 requests
-pytz
