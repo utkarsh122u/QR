@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 import pandas as pd
 
+st.title("Ayush Goyal")
 st.markdown("<h1><b>Place To Coordinates Converter</b></h1>", unsafe_allow_html=True)
 def get_lat_lon(place_name, api_key):
     url = "https://api.opencagedata.com/geocode/v1/json"
