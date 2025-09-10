@@ -90,7 +90,7 @@ with menu_tab:
 
                 dd = json.loads(item.get("dish_type", "[]"))
                 if len(dd) > 0:
-                    choice = st.pills(options=dd, disabled=True, label="Available In", key=f"{item['item']+str(item['price'])}_", selection_mode="single")
+                    choice = st.pills(options=dd, label="Available In", key=f"{item['item']+str(item['price'])}_", selection_mode="single")
 
                     if choice:
                         ch.append(choice)
@@ -240,4 +240,5 @@ with rate_us:
                 supabase.table("feedback").insert(dataS).execute()
                 st.info('Thank You ❤️')
             except Exception as e:
+
                 print(e)
